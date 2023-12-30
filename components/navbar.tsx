@@ -8,7 +8,7 @@ import { ThemeContext } from '@/context/themeContext'
 
 const NavBar = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const {toggle, theme} = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
   return (
     <nav className='flex items-center justify-between '>
         <div className="text-lg font-bold flex flex-center lg:text-3xl md:text-xl">
@@ -44,7 +44,7 @@ const NavBar = () => {
             
           </div>
           {open && (
-            <div className={`responsiveMenu ${theme === 'light'?'menu_bg_light':'menu_bg_dark'}`}>
+            <div className={`mobile_menu ${theme === 'light'?'menu_bg_light':'menu_bg_dark'}`}>
               
               <Link href={'/'}>HomePage</Link>
             <Link href={'/'}>Contact</Link>
