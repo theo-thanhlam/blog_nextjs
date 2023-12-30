@@ -1,0 +1,29 @@
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor);
+}
+
+.responsiveMenu {
+    padding: 1rem;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Set the height to cover the entire viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    
+  }
+.menu_bg_light{
+    @apply bg-stone-200;
+}
+
+.menu_bg_dark{
+    @apply bg-slate-800;
+}
+  
