@@ -6,14 +6,8 @@
 
 .mobile_menu {
     z-index: 100;
-    @apply p-4 fixed top-8 left-0 w-full h-screen flex flex-col justify-center items-center gap-5 text-2xl transition-all
+    @apply p-4 fixed top-8 left-0 w-full h-screen flex flex-col justify-center items-center gap-5 text-2xl transition-all ease-in-out delay-100
     
   }
-.menu_bg_light{
-    @apply bg-stone-100;
-}
 
-.menu_bg_dark{
-    @apply bg-slate-800;
-}
   
