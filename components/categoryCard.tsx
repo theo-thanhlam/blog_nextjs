@@ -14,7 +14,7 @@ const CategoryCard = (props: {
   return (
     <Link
       href={link}
-      className="flex gap-3 items-center capitalize border-2 rounded-lg w-full md:w-1/3 h-10 justify-center button-light dark:button-dark"
+      className="flex gap-3 items-center capitalize border-2 rounded-lg w-full md:w-1/3 h-10 justify-center button-light dark:button-dark "
     >
       <div className="flex items-center">
         <Image

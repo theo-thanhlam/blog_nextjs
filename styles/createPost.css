@@ -1,0 +1,25 @@
+.ql-container{
+  font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before{
+  color: #b3b3b1;
+  left: 1;
+}
+
+
+.button, .addButton{
+    border-radius: 50%;
+    @apply w-10 h-10 border border-solid flex items-center justify-center cursor-pointer border-stone-900 dark:border-stone-100
+}
+.editor{
+    height: 700px;
+    @apply flex relative flex-col
+}
+
+.add{
+z-index: 999;
+    @apply flex gap-5 absolute w-full left-12 pl-4 
+    
+}
+

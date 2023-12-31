@@ -13,7 +13,7 @@ const PostList = () => {
   return (
     <div className="">
       <h1 className="my-4 mx-0 text-4xl font-bold">Recent Post</h1>
-      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-items-center justify-center gap-y-5 md:gap-y-10  mt-10 mb-5">
         <PostCard
           author={data.author}
           title={data.title}

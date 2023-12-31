@@ -6,9 +6,9 @@ import { format } from 'date-fns';
 import Comments from '@/components/postComments';
 const SinglePage = () => {
   return (
-    <div className="">
-      <div className="flex overflow-hidden">
-        <img src="/p2.jpg" alt="Post Cover" className="object-center" />
+    <div className=" mt-5">
+      <div className="flex overflow-hidden h-full w-full items-center">
+        <img src="/p2.jpg" alt="Post Cover" className="object-cover" />
       </div>
       <div className="postInfo">
         <div className="postTitle">

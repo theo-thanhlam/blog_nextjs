@@ -11,8 +11,10 @@
   "dependencies": {
     "date-fns": "^3.0.6",
     "next": "14.0.4",
+    "quill": "^1.3.6",
     "react": "^18",
     "react-dom": "^18",
+    "react-quill": "^2.0.0",
     "react-timeago": "^7.2.0"
   },
   "devDependencies": {

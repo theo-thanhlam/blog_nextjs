@@ -13,7 +13,7 @@ const PostCard = (props: {
 }) => {
   const { author, title, category, createdAt, cover } = props;
   return (
-    <div className="w-auto bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div className="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
       <Link href="/asdasd">
         {/* Image Cover */}
         <Image
