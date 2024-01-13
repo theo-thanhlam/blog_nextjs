@@ -2,14 +2,27 @@
 import { ThemeContext } from '@/context/themeContext';
 import Image from 'next/image';
 import React, { useContext, useState } from 'react';
-import ReactQuill, { Quill } from 'react-quill';
+// import ReactQuill, { Quill } from 'react-quill';
 import '@/styles/createPost.css';
 import 'react-quill/dist/quill.bubble.css';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+
+const ReactQuill = typeof window === 'object' ? require('react-quill') : () => false;
 
 const CreatePostPage = () => {
   const [open, setOpen] = useState(false);
   const { theme } = useContext(ThemeContext);
   const [value, setValue] = useState('');
+
+  const {data:session, status} = useSession();
+  const router = useRouter();
+  if(status === 'loading'){
+    return <div className='lds-dual-ring'></div>
+  }
+  if (!session?.user){
+    router.push("/")
+  }
 
   return (
     <div className="relative flex flex-col mt-5">

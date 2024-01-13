@@ -10,7 +10,7 @@ const NavBar = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { theme } = useContext(ThemeContext);
   return (
-    <nav className="flex items-center justify-between pt-1">
+    <nav className="flex items-center justify-between pt-2">
       <Link
         href={'/'}
         className="text-lg font-bold flex flex-center lg:text-3xl md:text-xl"
